@@ -11,6 +11,9 @@ void inputdata()
    cin >> bilangan2;
 }
 
+
+
+
 int main(){
     
 }
