@@ -3,7 +3,7 @@ using namespace std;
 
 int bilangan1, bilangan2;
 
-void inputdata()
+void inputData()
 {
    cout << "masukkan bilangan pertama : ";
    cin >> bilangan1;
@@ -25,7 +25,7 @@ int perkalian(int a, int b)
 }
 float pembagian(int a, int b)
 {
-     a / b;
+    return a / b;
 }
 
 int main()
@@ -59,7 +59,7 @@ int main()
 
             case 3:
             inputData();
-            cout << "hasil perkalian  = " << perkalian(bilangan1, bilangan3) << endl;
+            cout << "hasil perkalian  = " << perkalian(bilangan1, bilangan2) << endl;
             break; 
 
             case 4:
@@ -75,6 +75,7 @@ int main()
                 break;
     
         }
-    }
-    
+        system ("pause");
+        system ("CLS");
+    }while (pilihan != 5);
 }
