@@ -11,7 +11,7 @@ void inputdata()
    cin >> bilangan2;
 }
 
-int perjumlahan(int a, int b)
+int penjumlahan(int a, int b)
 {
     return a + b;
 }
@@ -36,7 +36,7 @@ int main()
     {
         cout << "kalkulator sederhana" << endl;
         cout << "====================" << endl;
-        cout << "1. perjumlahan" << endl;
+        cout << "1. penjumlahan" << endl;
         cout << "2. pengurangan" << endl;
         cout << "3. perkalian" << endl;
         cout << "4. pembagian" << endl;
@@ -45,7 +45,36 @@ int main()
         cout << "masukan menu pilihan : ";
         cin >> pilihan;
 
+        switch (pilihan)
+        {
+            case 1:
+            inputData();
+            cout << "hasil penjumlahan = " << penjumlahan(bilangan1, bilangan2) << endl;
+            break;
+
+            case 2:
+            inputData();
+            cout << "hasil pengurangan = " << pengurangan(bilangan1, bilangan2) << endl;
+            break;
+
+            case 3:
+            inputData();
+            cout << "hasil perkalian  = " << perkalian(bilangan1, bilangan3) << endl;
+            break; 
+
+            case 4:
+            inputData();
+            cout <<  "Hasil Pembagian   = "<< pembagian(bilangan1, bilangan2) << endl;
+            break;
+
+            case 5:
+            break;
+            
+            default:
+                cout << "pilihan tidak ada" << endl;
+                break;
     
+        }
     }
     
 }
