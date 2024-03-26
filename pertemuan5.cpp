@@ -11,6 +11,12 @@ void inputdata()
    cin >> bilangan2;
 }
 
+int perjumlahan(int a, int b)
+{
+    return a + b;
+}
+
+
 
 
 
